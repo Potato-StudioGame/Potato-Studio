@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海盗王传说</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 游戏界面容器 -->
+    <div class="container">
+        <!-- 左侧信息面板 -->
+        <div class="left-panel">
+            <h3>玩家信息</h3>
+            <p>金币：<span id="player-coins">1500</span></p>
+            <p>位置：<span id="player-position">1</span></p>
+            <h4>电脑信息</h4>
+            <p>金币：<span id="computer-coins">1500</span></p>
+            <p>位置：<span id="computer-position">1</span></p>
+        </div>
+
+        <!-- 中间棋盘 -->
+        <div class="board" id="board">
+            <!-- 动态生成40个格子 -->
+            <div id="cell-1" class="cell">1</div>
+            <div id="cell-2" class="cell">2</div>
+            <div id="cell-3" class="cell">3</div>
+            <div id="cell-4" class="cell">4</div>
+            <div id="cell-5" class="cell">5</div>
+            <div id="cell-6" class="cell">6</div>
+            <div id="cell-7" class="cell">7</div>
+            <div id="cell-8" class="cell">8</div>
+            <div id="cell-9" class="cell">9</div>
+            <div id="cell-10" class="cell">10</div>
+            <div id="cell-11" class="cell">11</div>
+            <div id="cell-12" class="cell">12</div>
+            <div id="cell-13" class="cell">13</div>
+            <div id="cell-14" class="cell">14</div>
+            <div id="cell-15" class="cell">15</div>
+            <div id="cell-16" class="cell">16</div>
+            <div id="cell-17" class="cell">17</div>
+            <div id="cell-18" class="cell">18</div>
+            <div id="cell-19" class="cell">19</div>
+            <div id="cell-20" class="cell">20</div>
+            <div id="cell-21" class="cell">21</div>
+            <div id="cell-22" class="cell">22</div>
+            <div id="cell-23" class="cell">23</div>
+            <div id="cell-24" class="cell">24</div>
+            <div id="cell-25" class="cell">25</div>
+            <div id="cell-26" class="cell">26</div>
+            <div id="cell-27" class="cell">27</div>
+            <div id="cell-28" class="cell">28</div>
+            <div id="cell-29" class="cell">29</div>
+            <div id="cell-30" class="cell">30</div>
+            <div id="cell-31" class="cell">31</div>
+            <div id="cell-32" class="cell">32</div>
+            <div id="cell-33" class="cell">33</div>
+            <div id="cell-34" class="cell">34</div>
+            <div id="cell-35" class="cell">35</div>
+            <div id="cell-36" class="cell">36</div>
+            <div id="cell-37" class="cell">37</div>
+            <div id="cell-38" class="cell">38</div>
+            <div id="cell-39" class="cell">39</div>
+            <div id="cell-40" class="cell">40</div>
+        </div>
+
+        <!-- 右侧游戏状态栏 -->
+        <div class="info-panel">
+            <h3>游戏状态</h3>
+            <p id="game-status">玩家回合，请掷骰子。</p>
+            <button id="rollDiceBtn" onclick="rollDice()">掷骰子</button>
+            <button id="endTurnBtn" onclick="endTurn()" disabled>结束回合</button>
+            <button id="purchaseBtn" onclick="purchaseProperty()" disabled>购买地产</button>
+        </div>
+    </div>
+    <script src="gameLogic.js"></script>
+
+    <script src="uiFunctions.js"></script>
+
+</body>
+</html>
